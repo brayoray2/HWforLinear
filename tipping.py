@@ -16,8 +16,8 @@ print(intercept)
 
 
 
-print_equation(slope,intercept,'dollars','dollars')
-
+eq = print_equation(slope,intercept,'dollars','dollars')
+print(eq)#The equation of the line is: 0.18dollars + -0.29 dollars
 plt.figure()
 plt.scatter(x, y, label='Data')
 plt.plot(x, linear(x, slope, intercept),label='Linear Fit') #change this label if you have a non-linear fit
@@ -33,8 +33,8 @@ slope = round(params[0],2)
 intercept = round(params[1],2)
 print(slope)
 print(intercept)
-print_equation(slope,intercept,'dollars','%')
-
+eq_2 = print_equation(slope,intercept,'dollars','%')
+print(eq_2)#The equation of the line is: 0.05 %/dollars + 15.51 dollars
 plt.figure()
 plt.scatter(x, y, label='Data')
 plt.plot(x, linear(x, slope, intercept),label='Linear Fit') #change this label if you have a non-linear fit
